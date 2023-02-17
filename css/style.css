@@ -71,15 +71,15 @@ nav li{
     height: 100vh;
 }
 .lineUp{
+    font-size: 3.6rem;
+    font-weight: 600;
+    animation: anim-lineUp 5s ease-out;
+}
+#txtType{
     color: var(--bg-nav);
     font-size: 2rem;
     font-weight: 200;
     font-style: italic;
-    animation: anim-lineUp 5s ease-out;
-}
-#txtType{
-    font-size: 3.6rem;
-    font-weight: 600;
 }
 /* Edit Work section */
 #projects{
