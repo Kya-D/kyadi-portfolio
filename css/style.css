@@ -1,0 +1,216 @@
+@media (max-width: 1320px){
+    html{
+        font-size: 65%;
+    }
+}
+@media (max-width:870px){
+    html{
+        font-size: 55%;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    --bg-nav : #FECB00;
+    --fnt-clr : #fff;
+    --bg-wlcm: #222130;
+    --bg-prj : #45567D;
+    --bg-footer: #3b3a50;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--fnt-clr);
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none !important;
+    color: var(--fnt-clr);
+}
+a:visited{
+    color: var(--fnt-clr);
+}
+/* Edit Nav Bar */
+#navbar{
+    background-color: var(--bg-nav);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(129, 129, 129, 0.3);
+    z-index: 2;
+}
+#nav-list{
+    display: flex;
+    margin-right: 2rem;
+}
+nav li{
+    list-style: none;
+}
+.nav-link{
+    display: block;
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: var(--fnt-clr);
+}
+.nav-link:hover{
+    background-color: var(--bg-wlcm);
+}
+/* Edit Welcome Section */
+#welcome-section{
+    background-color: var(--bg-wlcm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.lineUp{
+    color: var(--bg-nav);
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    animation: anim-lineUp 5s ease-out;
+}
+#txtType{
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+/* Edit Work section */
+#projects{
+    background-color: var(--bg-prj);
+    padding: 10rem 2rem;
+    text-align: center;
+}
+#project-title{
+    max-width: 650px;
+    margin: 0 auto;
+    border-bottom: 0.5px solid var(--fnt-clr);
+}
+#project-title p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.projects-section{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    margin: 5rem auto;
+}
+.project-tile{
+    background-color: var(--bg-wlcm);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.project-tile:hover{
+    transform: scale(1.1);
+    transition: 0.3s cubic-bezier(0.96, 0.01, 1, 1);
+    z-index: 0;
+}
+.project-tile:hover .code{
+    color: var(--bg-nav);
+}
+.project-tile:hover .play{
+    opacity: 1;
+    /* font-size: 5rem; */
+    color: var(--bg-nav);
+    transition: 0.3 ease-in-out;
+}
+.project-tile:hover .video{
+    opacity: 0.3;
+}
+.project-tile p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--fnt-clr);
+    padding: 0.5rem 0.5rem ;
+}
+.play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: var(--fnt-clr);
+    opacity: 0.5; 
+    font-size: 5rem;
+    cursor: pointer;
+}
+.project-thumbnail{
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.code{
+    color: var(--bg-wlcm);
+}
+/* Edit contact section */
+#contact-section{
+    background-color: var(--bg-footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    padding: 0 2rem;
+}
+.sentence{
+    font-size: 4rem;
+    font-weight: 600;
+} 
+.contact-media{
+    width: 60%;
+    display: flex;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5rem;
+}
+#profile-link{
+    transition: transform 0.3s ease-out;
+}
+.media:hover #profile-link{
+    color: var(--bg-nav);
+    transform: translateY(-20%);
+}
+.media-name{
+    font-size: 1.5rem;
+}
+#footer-section{
+    background-color: var(--bg-footer);
+    text-align: center;
+    border-top: var(--bg-nav) 3px solid; 
+}
+.copyright{
+    display: inline-block;
+    padding: 2rem 0.3rem;
+}
+/* animation line-up */
+@keyframes anim-lineUp {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(0%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
