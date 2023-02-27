@@ -73,7 +73,7 @@ nav li{
 .lineUp{
     font-size: 3.6rem;
     font-weight: 600;
-    animation: anim-lineUp 5s ease-out;
+    animation: anim-lineUp 3s ease-out;
 }
 #txtType{
     color: var(--bg-nav);
