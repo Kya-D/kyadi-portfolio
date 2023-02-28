@@ -71,11 +71,6 @@ nav li{
     height: 100vh;
 }
 .lineUp{
-    font-size: 5rem;
-    text-align: center;
-    animation: anim-lineUp 3s ease-out;
-}
-#txtType{
     color: var(--bg-nav);
     font-size:2rem;
     font-weight: 200;
