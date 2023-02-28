@@ -71,15 +71,15 @@ nav li{
     height: 100vh;
 }
 .lineUp{
-    color: var(--bg-nav);
-    font-size: 2rem;
-    font-weight: 200;
-    font-style: italic;
-    animation: anim-lineUp 5s ease-out;
+    font-size: 5rem;
+    text-align: center;
+    animation: anim-lineUp 3s ease-out;
 }
 #txtType{
-    font-size: 3.6rem;
-    font-weight: 600;
+    color: var(--bg-nav);
+    font-size:2rem;
+    font-weight: 200;
+    font-style: italic;
 }
 /* Edit Work section */
 #projects{
@@ -119,7 +119,6 @@ nav li{
 }
 .project-tile:hover .play{
     opacity: 1;
-    /* font-size: 5rem; */
     color: var(--bg-nav);
     transition: 0.3 ease-in-out;
 }
